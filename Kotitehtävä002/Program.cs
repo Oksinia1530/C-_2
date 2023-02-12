@@ -7,11 +7,13 @@ Console.Clear();
 Console.WriteLine("Enter a number ");
 int A = int.Parse(Console.ReadLine()!);
 int A2 = A % 10;
-if (A2 > 0)
+if (A < 100)
 {
-Console.WriteLine ($"{A2}");
+    Console.WriteLine("No third digit");
+
 }
-else if (A2 < 0)
+
+else
 {
-    Console.WriteLine ("No");
+    Console.WriteLine($"Third digit {A2}");
 }
